@@ -22,7 +22,7 @@ app.get("/api/romi", (_req, res) => {
 });
 
 app.get("/api/mahasiswa", async (_req, res) => {
-  const results = await client.query("SELECT * FROM pelatihan");
+  const results = await client.query("SELECT * FROM mahasiswa");
   res.send(results.rows);
 });
 
